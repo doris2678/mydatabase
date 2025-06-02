@@ -34,6 +34,7 @@
             <td>品項</td>
             <td>價格</td>
             <td>操作</td>
+            <td>操作</td>
         </tr>
         <?php
         foreach($items as $item):
@@ -42,6 +43,7 @@
             <td><?=$item['name'];?></td>
             <td><?=$item['price'];?></td>
             <td><a href='update_item.php?id=<?=$item['id'];?>'>編輯</a></td>
+            <td><a href='delete_item.php?id=<?=$item['id'];?>'>刪除</a></td>
         </tr>
         <?php
         endforeach;

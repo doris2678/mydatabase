@@ -14,11 +14,11 @@
         <label for="price">價格:</label>
         <input type="number" name="price" id="price" required>
         <br>
-        <label for="name">成本:</label>
-        <input type="text" name="cost" id="name" required>
+        <label for="cost">成本:</label>
+        <input type="text" name="cost" id="cost" required>
         <br>
-        <label for="price">庫存:</label>
-        <input type="number" name="stock" id="price" required>
+        <label for="stock">庫存:</label>
+        <input type="number" name="stock" id="stock" required>
         <br>
         <button type="submit">新增</button>
     </form>

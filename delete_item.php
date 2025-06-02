@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>編輯品項</title>
+    <title>刪除品項</title>
 </head>
 <body>
-    <h1>編輯品項</h1>
+    <h1>刪除品項</h1>
     <?php
     $dsn = "mysql:host=localhost;dbname=store;charset=utf8";
     $pdo = new PDO($dsn, 'root', '');
@@ -17,7 +17,7 @@
         exit;
     }
     ?>
-    <form action="./api/update_item.php" method="post">
+    <form action="./api/delete_item.php" method="post">
         <label for="name">品項名稱:</label>
         <input type="text" name="name" id="name" value="<?=$item['name'];?>" required>
         <br>
@@ -31,7 +31,7 @@
         <input type="number" name="stock" id="stock" value="<?=$item['stock'];?>" required>
         <br>
         <input type="hidden" name="id" value="<?=$item['id'];?>">
-        <button type="submit">編輯</button>
+        <button type="submit">刪除</button>
     </form>
 </body>
 </html>
