@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025-06-03 02:10:05
+-- 產生時間： 2025-06-04 09:36:03
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -46,7 +46,8 @@ INSERT INTO `items` (`id`, `name`, `cost`, `stock`, `price`) VALUES
 (4, '雞肉漢堡', 20, 50, 30),
 (5, '蘿葡糕', 12, 100, 35),
 (6, '雞肉可頌', 25, 50, 55),
-(7, 'dd', 10, 100, 20);
+(8, '奶茶', 10, 100, 20),
+(9, '河粉', 30, 50, 45);
 
 -- --------------------------------------------------------
 
@@ -111,7 +112,7 @@ ALTER TABLE `sales`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `sales`
