@@ -25,10 +25,16 @@
             padding: 5px 12px;
             text-align: center;
         }
+        .btns{
+         display:flex;
+         justify-content:space-between;
+        }
     </style>
     <div class='btns'>
         <button><a href='add_item.php'>+</a></button>
+        <button><a href='sales_report.php'>銷售報表</a></button>
     </div>
+
     <table id='items'>
         <tr>
             <td>品項</td>
